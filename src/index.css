@@ -1,0 +1,684 @@
+*{
+  margin: 0;
+  font-family: sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: white;
+}
+header{
+  background-color: rgb(249, 249, 249);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header #mobile-button{
+  display: none;
+  position: relative;
+  font-size: 25px;
+  margin-right: 30px;
+}
+header .mobile-menu{
+  display: none;
+  background-color: rgb(228, 228, 228);
+  position: absolute;
+  margin-top: 370px;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+}
+header .mobile-menu ul{
+  width: 25%;
+  margin-left: 95px;
+  text-align: center;
+}
+header .mobile-menu ul li{
+  margin: 10px 0px;
+}
+header .mobile-menu ul li a{
+  color: black;
+}
+header .mobile-menu .user{
+  text-align: center;
+  margin-top: 20px;
+}
+header .header-menu{
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 0px;
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+header .header-menu .logo {
+  margin-left: 10px;
+}
+header .header-menu .logo img{
+  width: 50px;
+  object-fit: cover;
+}
+header .header-menu ul{
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin: 0 auto;
+  text-align: center;
+}
+header .header-menu ul #active{
+  padding: 7px 10px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+}
+header .header-menu ul #active a{
+  padding: 7px 10px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 10px;
+  color: black;
+  font-weight: bold;
+}
+header .header-menu ul li{
+  margin: 0px 15px;
+}
+header .header-menu ul li a{
+  color: rgb(104, 104, 104);
+}
+header .header-menu .user{
+  display: flex;
+  align-items: center;
+  width: 150px;
+  text-align: left;
+}
+header .header-menu .user img{
+  width: 45px;
+  height: 45px;
+  padding-right: 5px;
+  border-radius: 50%;
+  background-position: center;
+  object-fit: cover;
+}
+
+.cards-container{
+  width: 100%;
+  margin-top: 35px;
+}
+.cards-container .cards{
+  display: flex;
+  
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 90%;
+}
+.cards-container .cards .card{
+  background-color: white;
+  text-align: left;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 7px 1px rgb(241, 241, 241);
+  border: 1px solid rgb(211, 211, 211);
+  width: 400px;
+  border-radius: 5px;
+}
+.cards-container .cards .card .detail{
+  padding: 25px 30px;
+}
+.cards-container .cards .card .detail h1{
+  font-size: 40px;
+}
+.cards-container .cards .card .detail .detail-one{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+.cards-container .cards .card .detail .detail-one i{
+  font-size: 20px;
+}
+.cards-container .cards .card .detail .detail-one #bolt{
+  background-color: rgb(234, 234, 234);
+  padding: 8px 10px;
+  border-radius: 50%;
+}
+.cards-container .cards .card .detail .detail-two{
+  display: flex;
+  margin-top: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards-container .cards .card .detail .detail-two span p{
+  color: rgb(146, 146, 146);
+}
+.cards-container .cards .card .detail .detail-two #await{
+  background-color: rgb(189, 235, 189);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.cards-container .cards .card .detail .detail-two #await p{
+  color: green;
+}
+.images-container{
+  width: 100%;
+  margin-top: 20px;
+}
+.images-container .images{
+  width: 88.5%;
+  margin: 0 auto;
+}
+.images-container .images img{
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.grafik-container{
+  width: 100%;
+  margin-top: 40px;
+}
+.grafik-container .grafikler{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
+  padding: 10px 0px;
+}
+.grafik-container .grafikler .grafik-card{
+  background-color: white;
+  padding: 20px 20px;
+  margin: 10px 0px;
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 10px;
+  width: 570px;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-two{
+  margin-top: 15px;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three{
+  margin-top: 0px;
+  width: 40px;
+  text-align: left;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line{
+  background-color: rgb(223, 223, 223);
+  margin-left: 90px;
+  margin-top: 40px;
+  width: 30px;
+  height: 55px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-two{
+  background-color: red;
+  margin-left: 90px;
+  margin-top: 90px;
+  width: 30px;
+  height: 80px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-three{
+  background-color: rgb(153,31,0);
+  margin-left: 90px;
+  margin-top: 170px;
+  width: 30px;
+  height: 132px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-four{
+  background-color: rgb(153, 31, 0);
+  margin-left: 180px;
+  margin-top: 40px;
+  width: 30px;
+  height: 120px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-five{
+  background-color: red;
+  margin-left: 180px;
+  margin-top: 160px;
+  width: 30px;
+  height: 70px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-six{
+  background-color: rgb(153,31,0);
+  margin-left: 180px;
+  margin-top: 230px;
+  width: 30px;
+  height: 70px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-seven{
+  background-color: rgb(223, 223, 223);
+  margin-left: 270px;
+  margin-top: 40px;
+  width: 30px;
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-eight{
+  background-color: red;
+  margin-left: 270px;
+  margin-top: 100px;
+  width: 30px;
+  height: 95px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-nine{
+  background-color: rgb(153,31,0);
+  margin-left: 270px;
+  margin-top: 190px;
+  width: 30px;
+  height: 110px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-ten{
+  background-color: rgb(223, 223, 223);
+  margin-left: 360px;
+  margin-top: 40px;
+  width: 30px;
+  height: 100px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-eleven{
+  background-color: red;
+  margin-left: 360px;
+  margin-top: 140px;
+  width: 30px;
+  height: 85px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-twelwe{
+  background-color: rgb(153, 31, 0);
+  margin-left: 360px;
+  margin-top: 220px;
+  width: 30px;
+  height: 80px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-thirteen{
+  background-color: rgb(223, 223, 223);
+  margin-left: 450px;
+  margin-top: 40px;
+  width: 30px;
+  height: 40px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-fourteen{
+  background-color: red;
+  margin-left: 450px;
+  margin-top: 80px;
+  width: 30px;
+  height: 105px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-fifteen{
+  background-color: rgb(153,31,0);
+  margin-left: 450px;
+  margin-top: 180px;
+  width: 30px;
+  height: 120px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-sixteen{
+  background-color: rgb(223, 223, 223);
+  margin-left: 540px;
+  margin-top: 40px;
+  width: 30px;
+  height: 65px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-seventeen{
+  background-color: red;
+  margin-left: 540px;
+  margin-top: 105px;
+  width: 30px;
+  height: 150px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .line-eightteen{
+  background-color: rgb(153, 31, 0);
+  margin-left: 540px;
+  margin-top: 250px;
+  width: 30px;
+  height: 50px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .lin{
+  background-color: red;
+  margin-left: 90px;
+  margin-top: 115px;
+  border-radius: 10px 10px 0px 0px;
+  width: 80px;
+  height: 190px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .lin-two{
+  background-color: rgb(153, 31, 0);
+  margin-left: 170px;
+  margin-top: 140px;
+  border-radius: 0px 10px 0px 0px;
+  width: 80px;
+  height: 165px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .lin-three{
+  background-color: red;
+  margin-left: 250px;
+  margin-top:240px;
+  border-radius: 0px 10px 0px 0px;
+  width: 80px;
+  height: 65px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .lin-four{
+  background-color: rgb(153, 31, 0);
+  margin-left: 330px;
+  margin-top: 270px;
+  border-radius: 0px 10px 0px 0px;
+  width: 80px;
+  height: 35px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three .lin-five{
+  background-color: red;
+  margin-left: 410px;
+  margin-top: 285px;
+  border-radius: 0px 10px 0px 0px;
+  width: 80px;
+  height: 20px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+}
+.grafik-container .grafikler .grafik-card .grafik-detail-three p{
+  margin-top: 32px;
+}
+.table-container{
+  width: 100%;
+  margin-top: 40px;
+  padding-bottom: 40px;
+}
+.table-container #personel {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 0 auto;
+  }
+   
+.table-container  #personel td, #personel th {
+  padding: 16px;
+  }
+   
+
+.table-container  #personel tr{
+  text-align: left;
+}
+.table-container #personel th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: rgb(191,191,191);
+  color: white;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .grafik-container .grafikler{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 0px;
+    }
+    .grafik-container .grafikler .grafik-card{
+      background-color: white;
+      padding: 20px 20px;
+      margin: 10px 0px;
+      border-radius: 10px;
+      width: 600px;
+    }
+  }
+@media screen and (max-width: 790px) {
+  header .header-menu ul li{
+    display: none;
+  }
+  .grafik-container .grafikler{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
+  .grafik-container .grafikler .grafik-card{
+    background-color: white;
+    padding: 20px 20px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    width: 700px;
+  }
+  .cards-container .cards .card{
+    text-align: left;
+    margin: 10px 10px;
+    box-shadow: 0px 0px 7px 1px rgb(241, 241, 241);
+    border: 1px solid rgb(211, 211, 211);
+    width: 300px;
+    border-radius: 5px;
+  }
+  .cards-container .cards .card .detail{
+    padding: 25px 20px;
+  }
+  .images-container .images img{
+    object-fit: contain;
+  }
+}
+@media screen and (max-width: 490px) {
+  header{
+    display: flex;
+    justify-content: space-around;
+  }
+  header .header-menu ul li{
+    display: none;
+  }
+  header .header-menu .user{
+    display: none;
+  }
+  header #mobile-button{
+    display: block;
+  }
+  .cards-container .cards .card{
+    text-align: left;
+    margin: 5px 10px;
+    box-shadow: 0px 0px 7px 1px rgb(241, 241, 241);
+    border: 1px solid rgb(211, 211, 211);
+    width: 400px;
+    border-radius: 5px;
+  }
+  .cards-container .cards .card .detail{
+    padding: 25px 20px;
+  }
+  .images-container {
+    margin-top: -70px;
+  }
+  .images-container .images img{
+    object-fit: contain;
+  }
+
+  .grafik-container .grafikler{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 0px;
+  }
+  .grafik-container .grafikler .grafik-card{
+    background-color: white;
+    padding: 20px 20px;
+    margin: 10px 0px;
+    border-radius: 10px;
+    width: 300px;
+  }
+
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-two{
+    margin-left: 25px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-three{
+    margin-left: 25px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-four{
+    margin-left: 25px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-five{
+    margin-left: 60px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-six{
+    margin-left: 60px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-three{
+    margin-left: 25px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-eight{
+    margin-left: 95px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-nine{
+    margin-left: 95px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-eight{
+    margin-left: 95px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-ten{
+    margin-left: 95px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-eleven{
+    margin-left: 130px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-twelwe{
+    margin-left: 130px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-thirteen{
+    margin-left: 150px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-fourteen{
+    margin-left: 165px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-fifteen{
+    margin-left: 165px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-sixteen{
+    margin-left: 165px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-seventeen{
+    margin-left: 200px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .line-eightteen{
+    margin-left: 200px;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .lin{
+    background-color: red;
+    margin-left: 25px;
+    margin-top: 115px;
+    border-radius: 10px 10px 0px 0px;
+    width: 45px;
+    height: 190px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .lin-two{
+    background-color: rgb(153, 31, 0);
+    margin-left: 70px;
+    margin-top: 140px;
+    border-radius: 0px 10px 0px 0px;
+    width: 45px;
+    height: 165px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .lin-three{
+    background-color: red;
+    margin-left: 115px;
+    margin-top: 240px;
+    border-radius: 0px 10px 0px 0px;
+    width: 45px;
+    height: 65px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .lin-four{
+    background-color: blue;
+    margin-left: 160px;
+    margin-top: 270px;
+    border-radius: 0px 10px 0px 0px;
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+  }
+  .grafik-container .grafikler .grafik-card .grafik-detail-three .lin-five{
+    background-color: red;
+    margin-left: 205px;
+    margin-top: 285px;
+    border-radius: 0px 10px 0px 0px;
+    width: 45px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    display: flex;
+  }
+}
